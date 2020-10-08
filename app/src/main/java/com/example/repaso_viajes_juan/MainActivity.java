@@ -51,12 +51,18 @@ public class MainActivity extends AppCompatActivity {
         }
             if (jcbautomovil.isChecked())
             {
-                jtvautomovil.setText("50000");
+                jtvautomovil.setText("500000");
             }
             else
             {
                 jtvautomovil.setText("0");
             }
+            double ciudad, automivil, total;
+
+            ciudad=Double.parseDouble(jtvciudad.getText().toString());
+            automivil=Double.parseDouble(jtvautomovil.getText().toString());
+            total=ciudad + automivil;
+            jtvtotal.setText(String.valueOf(total));
     }
 
 }
