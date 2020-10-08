@@ -167,7 +167,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="total viaje"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:onClick="calcular_viaje"/>
     </LinearLayout>
 
     <LinearLayout

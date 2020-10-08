@@ -3,6 +3,7 @@ package com.example.repaso_viajes_juan;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -29,4 +30,33 @@ public class MainActivity extends AppCompatActivity {
         jbttotal=findViewById(R.id.bttotal);
         jcbautomovil=findViewById(R.id.cbautomovil);
     }
+
+    public void calcular_viaje(View v)
+    {
+        if (jrbcartagena.isChecked())
+        {
+            jtvciudad.setText("600000");
+
+        }
+        else
+        {
+            if (jrbsantamarta.isChecked())
+            {
+                jtvciudad.setText("800000");
+            }
+            else
+            {
+                jtvciudad.setText("1200000");
+            }
+        }
+            if (jcbautomovil.isChecked())
+            {
+                jtvautomovil.setText("50000");
+            }
+            else
+            {
+                jtvautomovil.setText("0");
+            }
+    }
+
 }
